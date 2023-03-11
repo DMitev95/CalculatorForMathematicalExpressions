@@ -1,0 +1,45 @@
+﻿@using CalculatorForMathematicalExpressions.Core.Model;
+@model CalculatorModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+        <form method="post">
+            <fieldset>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="Pattern" placeholder="Enter a claim number"
+                           id="Pattern" />
+                    <div class="mb-3">
+                        <p>Result is: <span id="result"></span></p>
+                    </div>
+                </div>
+                <br />
+                <div class="mb-3">
+                    <input class="btn btn-primary" value="Calculate" id="btnCalculate" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $("#btnCalculate").on("click", function () {
+            var pattern = $("#Pattern").val();
+
+            $.ajax({
+                type: "POST",
+                url: "api/Calculate",
+                data: JSON.stringify({ pattern: pattern }),
+                success: function (data) {
+                    $('#result').html(data.result);
+                },
+                contentType: "application/json",
+                dataType: "json",
+
+            });
+        });
+    </script>
+}
