@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorForMathematicalExpressions", "CalculatorForMathematicalExpressions\CalculatorForMathematicalExpressions.csproj", "{55FC3A72-99F3-4B0A-9769-DC06FF284541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorForMathematicalExpressions.Core", "CalculatorForMathematicalExpressions.Core\CalculatorForMathematicalExpressions.Core.csproj", "{3F12B22F-7779-4A92-8EF1-8BA58B4DEC63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorForMathematicalExpressions.Core", "CalculatorForMathematicalExpressions.Core\CalculatorForMathematicalExpressions.Core.csproj", "{3F12B22F-7779-4A92-8EF1-8BA58B4DEC63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorForMathematicalExpressions.Tests", "CalculatorForMathematicalExpressions.Tests\CalculatorForMathematicalExpressions.Tests.csproj", "{0B8D4C4B-C3BA-4444-8A3C-7F9639608599}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F12B22F-7779-4A92-8EF1-8BA58B4DEC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F12B22F-7779-4A92-8EF1-8BA58B4DEC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F12B22F-7779-4A92-8EF1-8BA58B4DEC63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B8D4C4B-C3BA-4444-8A3C-7F9639608599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B8D4C4B-C3BA-4444-8A3C-7F9639608599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B8D4C4B-C3BA-4444-8A3C-7F9639608599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B8D4C4B-C3BA-4444-8A3C-7F9639608599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

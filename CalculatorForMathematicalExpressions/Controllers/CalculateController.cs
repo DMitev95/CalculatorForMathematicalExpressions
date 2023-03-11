@@ -1,7 +1,5 @@
 ﻿using CalculatorForMathematicalExpressions.Core.Contracts;
 using CalculatorForMathematicalExpressions.Core.Model;
-using CalculatorForMathematicalExpressions.Core.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalculatorForMathematicalExpressions.Controllers
